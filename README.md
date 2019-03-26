@@ -10,7 +10,7 @@
 
 package | version
 --- | ---
-aws-appsync | ![npm](https://img.shields.io/npm/v/aws-appsync.svg)
+reams-aws-appsync | ![npm](https://img.shields.io/npm/v/aws-appsync.svg)
 aws-appsync-react | ![npm](https://img.shields.io/npm/v/aws-appsync-react.svg)
 
 
@@ -18,14 +18,25 @@ aws-appsync-react | ![npm](https://img.shields.io/npm/v/aws-appsync-react.svg)
 #### npm    
 
 ```
-npm install --save aws-appsync
+npm install --save reams-aws-appsync
 ```
 
 #### yarn    
     
 ```
-yarn add aws-appsync
+yarn add reams-aws-appsync
 ```
+
+## Why is it needed?
+When user is offline and mutations are happened, the aws-appsync package stores snapshot to local storage. And that snapshot is restored when user becomes online. This makes users confused about their works and they can think that they lost their works.
+
+## How to update it?
+aws-appsync is maintained by lerna so we should create our own package to use updated aws-appsync. We called it `reams-aws-appsync`
+This repo will be removed when aws-appsync fixed above issue.
+
+## What we have changed?
+We have disabled the restoring snapshot code [Disable Snapshot Restore](https://github.com/realestateams/aws-mobile-appsync-sdk-js/commit/42e97296802f84c89591c201cf451af7861f75ff)
+
 
 ## Usage
 

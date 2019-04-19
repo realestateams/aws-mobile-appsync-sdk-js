@@ -141,9 +141,7 @@ export const reducer = () => ({
         const { type, payload: normCache } = action;
         switch (type) {
             case WRITE_CACHE_ACTION:
-                return {
-                    ...normCache
-                };
+                return normCache;
             default:
                 return state;
         }

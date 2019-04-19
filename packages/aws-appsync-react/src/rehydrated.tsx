@@ -9,7 +9,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 
-import AWSAppSyncClient from 'aws-appsync';
+import AWSAppSyncClient from 'reams-aws-appsync';
 import { RehydratedState } from './index';
 
 export interface RehydrateProps {

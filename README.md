@@ -11,7 +11,7 @@
 package | version
 --- | ---
 reams-aws-appsync | ![npm](https://img.shields.io/npm/v/aws-appsync.svg)
-aws-appsync-react | ![npm](https://img.shields.io/npm/v/aws-appsync-react.svg)
+reams-aws-appsync-react | ![npm](https://img.shields.io/npm/v/aws-appsync-react.svg)
 
 
 ## Installation    
@@ -68,7 +68,7 @@ For more documentation on `graphql` operations performed by React Apollo click [
 import AWSAppSyncClient from 'aws-appsync'
 import AppSyncConfig from './aws-exports'
 import { ApolloProvider } from 'react-apollo'
-import { Rehydrated } from 'aws-appsync-react' // this needs to also be installed when working with React
+import { Rehydrated } from 'reams-aws-appsync-react' // this needs to also be installed when working with React
 
 import App from './App'
 
@@ -139,7 +139,7 @@ export default graphql(listPosts, {
 ```js
 import gql from 'graphql-tag'
 import { graphql, compose } from 'react-apollo'
-import { graphqlMutation } from 'aws-appsync-react'
+import { graphqlMutation } from 'reams-aws-appsync-react'
 
 const CreatePost = gql`
   mutation createPost($name: String!) {

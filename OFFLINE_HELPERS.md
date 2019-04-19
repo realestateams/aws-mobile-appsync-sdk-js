@@ -11,7 +11,7 @@ By default, the helpers look at the GraphQL operation name of the subscription/m
 ## `graphqlMutation`
 ### Import
 ```javascript
-import { graphqlMutation } from 'aws-appsync-react';
+import { graphqlMutation } from 'reams-aws-appsync-react';
 ```
 
 ### Signature
